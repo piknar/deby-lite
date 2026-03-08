@@ -40,10 +40,11 @@ Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-bas
 | Feature | Deby Lite | Agent Zero |
 |---------|-----------|------------|
 | **Base OS** | Debian Trixie 13.3 | Kali Linux |
-| **Focus** | Production / Stable | Hacking / Pentesting |
+| **Focus** | Production / Stable deployments | Security / Pentesting |
 | **Web3 Tokens** | ✅ A0T + Diem | ✅ A0T + Diem |
-| **Agent Profiles** | Agent0, Developer, Researcher, Hacker, Deby | Agent0, Default |
-| **Custom Skills** | ✅ Extended skill set | ✅ Base skills |
+| **Agent Profiles** | Same base profiles + custom **Deby** agent | Agent0, Developer, Researcher, Hacker, Default |
+| **Skills Framework** | Same AgentSkills.io standard | Same AgentSkills.io standard |
+| **Docker Base** | Debian Trixie 13.3 | Kali Linux |
 
 ## Project Structure
 
