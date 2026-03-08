@@ -112,3 +112,26 @@ Skills extend agent capabilities. Install from [AgentSkills.io](https://agentski
 ## License
 
 Based on [Agent Zero](https://github.com/frdel/agent-zero) by frdel.
+
+---
+
+## 🙏 Credits & Attribution
+
+Deby Lite is a fork and customization of the **[Agent Zero](https://github.com/frdel/agent-zero)** project.
+
+> **All core framework code, architecture, tooling, Web UI, memory systems, and agent infrastructure are the original work of [frdel](https://github.com/frdel) and the Agent Zero contributors.**
+
+| | |
+|---|---|
+| **Original Project** | [Agent Zero](https://github.com/frdel/agent-zero) |
+| **Original Author** | [frdel](https://github.com/frdel) |
+| **Original License** | [MIT License](https://github.com/frdel/agent-zero/blob/main/LICENSE) |
+| **Original Docs** | [agent-zero.ai](https://agent-zero.ai) |
+
+Deby Lite builds upon Agent Zero by providing:
+- A **Debian Trixie 13.3** base image instead of Kali Linux
+- Extended agent profiles tailored for production and web development
+- Custom skill integrations for VPS and Joomla management
+- Web3 token inference compatibility (A0T + Diem)
+
+If you find Agent Zero useful, please ⭐ **star the original repo**: https://github.com/frdel/agent-zero
