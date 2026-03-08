@@ -1,7 +1,24 @@
 # Deby Lite 🤖
 
 A customized [Agent Zero](https://github.com/frdel/agent-zero) AI agent system running in Docker.
-Built on Debian/Kali Linux with specialized agent profiles and an intuitive web UI.
+Built on Debian/Kali Linux with specialized agent profiles, an intuitive web UI, and **Web3-native token inference support**.
+
+## 🌐 Web3 Compliant Agent
+
+Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-based inference — compatible with the Agent Zero token ecosystem.
+
+### 💎 Supported Tokens
+
+| Token | Description |
+|-------|-------------|
+| **A0T** (Agent Zero Token) | Native utility token for Agent Zero ecosystem inference and compute credits |
+| **Diem** | Stablecoin-backed token for inference payments and agent service transactions |
+
+- Pay for LLM inference using **A0T** or **Diem** tokens
+- Compatible with Agent Zero's decentralized inference marketplace
+- Token-gated agent capabilities and compute tiers
+- Wallet integration for seamless on-chain inference billing
+- Works alongside traditional API key providers (OpenAI, Anthropic, etc.)
 
 ## Features
 
@@ -13,6 +30,7 @@ Built on Debian/Kali Linux with specialized agent profiles and an intuitive web 
 - 🔌 **A2A Protocol** - Agent-to-agent communication support
 - 🔍 **Vector Memory** - FAISS-powered persistent memory with semantic search
 - 🖥️ **Multi-LLM Support** - OpenAI, Anthropic, Google, Ollama, OpenRouter + more
+- 🌐 **Web3 Ready** - A0T & Diem token inference payments
 
 ## Project Structure
 
@@ -71,7 +89,7 @@ Then open http://localhost:8080 in your browser.
 Copy and edit the environment file:
 ```bash
 cp .env.example usr/.env
-# Add your API keys (OpenAI, Anthropic, etc.)
+# Add your API keys (OpenAI, Anthropic, etc.) or configure Web3 wallet for A0T/Diem inference
 ```
 
 ## Skills
