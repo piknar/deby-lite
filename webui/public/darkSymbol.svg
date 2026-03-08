@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Deby Logo - Stylized D for welcome background -->
+  <path d="M5,4 L5,28 L16,28 C24,28 28,22 28,16 C28,10 24,4 16,4 L5,4 Z M9,8 L16,8 C21,8 24,12 24,16 C24,20 21,24 16,24 L9,24 L9,8 Z" fill="currentColor"/>
+  <path d="M12,11 L16,11 C19,11 21,13.5 21,16 C21,18.5 19,21 16,21 L12,21 L12,11 Z" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.3"/>
+</svg>

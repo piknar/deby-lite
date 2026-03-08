@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <!-- Deby Logo - Stylized D with Debian-inspired design -->
+    <defs>
+        <linearGradient id="debyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#A80030;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#D70751;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <!-- Rounded square background -->
+    <g transform="matrix(1.13341,0,0,1.13341,-36.9503,-43.0342)">
+        <path d="M878.621,178.762C878.621,101.597 815.973,38.95 738.808,38.95L173.394,38.95C96.23,38.95 33.582,101.597 33.582,178.762L33.582,744.176C33.582,821.34 96.23,883.988 173.394,883.988L738.808,883.988C815.973,883.988 878.621,821.34 878.621,744.176L878.621,178.762Z" style="fill:url(#debyGradient);"/>
+    </g>
+    <!-- Stylized D letter -->
+    <g transform="matrix(1.2,0,0,1.2,-96,-96)">
+        <path d="M300,200L300,760L480,760C620,760 720,660 720,480C720,300 620,200 480,200L300,200ZM380,280L480,280C570,280 640,350 640,480C640,610 570,680 480,680L380,680L380,280Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+    <!-- Inner accent line -->
+    <g transform="matrix(1.2,0,0,1.2,-96,-96)">
+        <path d="M420,340L480,340C535,340 580,390 580,480C580,570 535,620 480,620L420,620L420,340Z" style="fill:none;stroke:white;stroke-width:8;stroke-opacity:0.3;"/>
+    </g>
+</svg>

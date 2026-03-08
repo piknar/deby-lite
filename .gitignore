@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Node.js
+**/node_modules/
+**/.npm/
+
+# User data (secrets, chats, env files)
+usr/
+tmp/
+logs/
+*.env
+secrets.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+**/.git/
