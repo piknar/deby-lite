@@ -135,3 +135,13 @@ Deby Lite builds upon Agent Zero by providing:
 - Web3 token inference compatibility (A0T + Diem)
 
 If you find Agent Zero useful, please ⭐ **star the original repo**: https://github.com/frdel/agent-zero
+
+---
+
+## 👥 Contributors
+
+| Name | GitHub | Email | Role |
+|------|--------|-------|------|
+| piknar | [@piknar](https://github.com/piknar) | piknar@gmail.com | Creator & Maintainer |
+
+*Want to contribute? Open a pull request or reach out at [piknar@gmail.com](mailto:piknar@gmail.com)*
