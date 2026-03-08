@@ -1,7 +1,9 @@
 # Deby Lite 🤖
 
 A customized [Agent Zero](https://github.com/frdel/agent-zero) AI agent system running in Docker.
-Built on Debian/Kali Linux with specialized agent profiles, an intuitive web UI, and **Web3-native token inference support**.
+Built on **Debian Trixie 13.3** with specialized agent profiles, an intuitive web UI, and **Web3-native token inference support**.
+
+> 🐧 **Platform Note:** Deby Lite runs on **Debian Trixie 13.3** (stable/testing), whereas the base [Agent Zero](https://github.com/frdel/agent-zero) framework runs on a **Kali Linux** flavored Docker image. Deby is optimized for clean Debian environments prioritizing stability and production deployments.
 
 ## 🌐 Web3 Compliant Agent
 
@@ -22,6 +24,7 @@ Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-bas
 
 ## Features
 
+- 🐧 **Debian Trixie 13.3** - Stable production-grade Linux base (vs Kali in base Agent Zero)
 - 🧠 **Multiple Agent Profiles** - Default, Agent0, Developer, Researcher, Hacker, Deby
 - 🛠️ **Built-in Tools** - Code execution, browser control, memory management, file operations, web search
 - 🌐 **Web UI** - Full-featured chat interface with settings, scheduler, and project management
@@ -31,6 +34,16 @@ Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-bas
 - 🔍 **Vector Memory** - FAISS-powered persistent memory with semantic search
 - 🖥️ **Multi-LLM Support** - OpenAI, Anthropic, Google, Ollama, OpenRouter + more
 - 🌐 **Web3 Ready** - A0T & Diem token inference payments
+
+## Deby vs Agent Zero
+
+| Feature | Deby Lite | Agent Zero |
+|---------|-----------|------------|
+| **Base OS** | Debian Trixie 13.3 | Kali Linux |
+| **Focus** | Production / Stable | Hacking / Pentesting |
+| **Web3 Tokens** | ✅ A0T + Diem | ✅ A0T + Diem |
+| **Agent Profiles** | Agent0, Developer, Researcher, Hacker, Deby | Agent0, Default |
+| **Custom Skills** | ✅ Extended skill set | ✅ Base skills |
 
 ## Project Structure
 
