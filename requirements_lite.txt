@@ -1,0 +1,243 @@
+# ============================================================
+# deby-lite requirements - stripped of heavy ML/AI extensions
+# Removed: torch, transformers, sentence-transformers, faiss-cpu,
+#          scikit-learn, scipy, numba, llvmlite, openai-whisper,
+#          huggingface_hub, safetensors, tokenizers, soundfile,
+#          hf-xet, cuda-pathfinder
+
+# --- Core async & web ---
+aiofile
+aiofiles
+aiohttp
+anyio
+asgiref
+fastapi
+uvicorn[standard]
+starlette
+sse-starlette
+watchfiles
+uvloop
+httptools
+websockets
+websockify
+Flask
+Werkzeug
+# --- Pydantic & settings ---
+pydantic>=2.0
+pydantic-settings
+annotated-types
+# --- LLM providers ---
+litellm
+anthropic
+openai
+groq
+google-genai
+ollama
+# --- Agent framework ---
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langgraph
+langgraph-checkpoint
+langgraph-prebuilt
+langgraph-sdk
+langsmith
+# --- MCP / A2A / FastMCP ---
+mcp
+fastmcp
+fasta2a
+# --- Browser / Playwright ---
+playwright
+browser-use
+browser-use-sdk
+cdp-use
+fake-useragent
+# --- Search ---
+duckduckgo-search
+ddgs
+# --- Document processing ---
+pypdf
+python-docx
+markitdown
+markdownify
+beautifulsoup4
+soupsieve
+html2text
+lxml
+lxml-html-clean
+reportlab
+magika
+# --- Image ---
+pillow
+# --- Crypto / Auth ---
+cryptography
+PyJWT
+bcrypt
+PyNaCl
+Authlib
+oauthlib
+requests-oauthlib
+pyotp
+jwcrypto
+# --- HTTP clients ---
+requests
+requests-toolbelt
+httpx
+httpx-sse
+# --- Git ---
+GitPython
+# --- Storage / DB ---
+redis
+SQLAlchemy
+faiss-cpu
+# --- Infrastructure ---
+paramiko
+docker
+psutil
+supervisor
+# --- Tokenization (lightweight) ---
+tiktoken
+regex
+# --- Scheduling ---
+python-crontab
+python-dateutil
+# --- Serialization ---
+PyYAML
+orjson
+ormsgpack
+# --- Utilities ---
+python-dotenv
+click
+typer
+rich
+tqdm
+tenacity
+backoff
+cachetools
+filelock
+portalocker
+nest-asyncio
+simpleeval
+xxhash
+uuid7
+uuid_utils
+tzdata
+pytz
+six
+wrapt
+Distro
+packaging
+chardet
+charset-normalizer
+idna
+certifi
+urllib3
+dnspython
+email-validator
+fastuuid
+# --- Socketio ---
+python-socketio
+python-engineio
+bidict
+simple-websocket
+# --- Schema / OpenAPI ---
+jsonschema
+jsonschema-path
+jsonschema-specifications
+jsonref
+jsonpatch
+jsonpointer
+openapi-pydantic
+referencing
+rpds-py
+# --- Misc AI utils ---
+dataclasses-json
+marshmallow
+docstring_parser
+typeguard
+typing-inspect
+typing-inspection
+typing_extensions
+mypy_extensions
+# --- MCP deps ---
+httpcore
+h2
+h11
+hpack
+hyperframe
+sniffio
+# --- Google APIs ---
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+googleapis-common-protos
+proto-plus
+protobuf
+pyasn1
+pyasn1_modules
+rsa
+# --- Misc ---
+blinker
+bubus
+caio
+cloudpickle
+cffi
+pycparser
+greenlet
+defusedxml
+uritemplate
+a2wsgi
+flaredantic
+jiter
+mpmath
+multidict
+frozenlist
+aiosignal
+propcache
+yarl
+aiohappyeyeballs
+socksio
+wsproto
+webcolors
+beartype
+autocommand
+inflect
+jaraco.classes
+jaraco.context
+jaraco.functools
+more-itertools
+pathable
+pathspec
+pfzy
+pyperclip
+screeninfo
+shellingham
+SecretStorage
+jeepney
+keyring
+posthog
+primp
+py-key-value-aio
+flatbuffers
+fsspec
+InquirerPy
+invoke
+rich-rst
+Markdown
+markdown-it-py
+mdurl
+Pygments
+prompt_toolkit
+wcwidth
+cyclopts
+zipp
+importlib_metadata
+zstandard
+brotli
+# sentence-transformers with CPU-only torch (avoids 2GB CUDA download)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+sentence-transformers>=2.7.0
