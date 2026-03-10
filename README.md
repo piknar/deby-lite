@@ -1,5 +1,9 @@
 # Deby Lite 🤖
 
+<p align="center">
+  <img src="res/deby-logo.png" alt="Deby Lite Logo" width="180">
+</p>
+
 A customized [Agent Zero](https://github.com/frdel/agent-zero) AI agent system running in Docker.
 Built on **Debian Trixie 13.3** with specialized agent profiles, an intuitive web UI, and **Web3-native token inference support**.
 
