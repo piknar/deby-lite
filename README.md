@@ -7,17 +7,17 @@ Built on **Debian Trixie 13.3** with specialized agent profiles, an intuitive we
 
 ## 🌐 Web3 Compliant Agent
 
-Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-based inference — compatible with the Agent Zero token ecosystem.
+Deby Lite is a **Web3 compliant AI agent** that supports decentralized token-based inference — compatible with the venice.ai ecosystem.
 
 ### 💎 Supported Tokens
 
 | Token | Description |
 |-------|-------------|
-| **A0T** (Agent Zero Token) | Native utility token for Agent Zero ecosystem inference and compute credits |
+| **A0T**  | venice.ai ecosystem utility token for inference and compute credits |
 | **Diem** | Stablecoin-backed token for inference payments and agent service transactions |
 
 - Pay for LLM inference using **A0T** or **Diem** tokens
-- Compatible with Agent Zero's decentralized inference marketplace
+- Compatible with venice.ai decentralized inference marketplace
 - Token-gated agent capabilities and compute tiers
 - Wallet integration for seamless on-chain inference billing
 - Works alongside traditional API key providers (OpenAI, Anthropic, etc.)
@@ -103,7 +103,7 @@ Then open http://localhost:8080 in your browser.
 Copy and edit the environment file:
 ```bash
 cp .env.example usr/.env
-# Add your API keys (OpenAI, Anthropic, etc.) or configure Web3 wallet for A0T/Diem inference
+# Add your API keys (OpenAI, Anthropic, etc.) or configure Web3 wallet for venice.ai token inference
 ```
 
 ## Skills
