@@ -10,15 +10,10 @@ class RootDefaultHandler(WebSocketHandler):
 
     Root is intentionally *not* used for application traffic. This handler exists to support
     optional low-risk diagnostics on `/` without making root behave like a global namespace.
+
+    SECURITY: Auth and CSRF are now required to prevent unauthenticated access
+    which was previously exploited as a crypto-malware C2 attack vector.
     """
-
-    @classmethod
-    def requires_auth(cls) -> bool:
-        return False
-
-    @classmethod
-    def requires_csrf(cls) -> bool:
-        return False
 
     @classmethod
     def get_event_types(cls) -> list[str]:
@@ -28,4 +23,9 @@ class RootDefaultHandler(WebSocketHandler):
     async def process_event(
         self, event_type: str, data: dict[str, Any], sid: str
     ) -> dict[str, Any] | WebSocketResult | None:
-        return {"ok": True, "namespace": self.namespace, "sid": sid, "echo": data}
+        # Echo only includes minimal keys - never echo full user payloads
+        safe_echo = {
+            k: v for k, v in data.items()
+            if isinstance(v, (str, int, float, bool)) and len(str(v)) < 256
+        }
+        return {"ok": True, "namespace": self.namespace, "sid": sid, "echo": safe_echo}

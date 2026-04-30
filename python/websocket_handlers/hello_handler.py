@@ -5,7 +5,10 @@ from python.helpers.websocket import WebSocketHandler
 
 
 class HelloHandler(WebSocketHandler):
-    """Sample handler used for foundational testing."""
+    """Sample handler used for foundational testing.
+
+    SECURITY: Now requires authentication to prevent unauthenticated WebSocket access.
+    """
 
     @classmethod
     def get_event_types(cls) -> list[str]:
@@ -13,7 +16,7 @@ class HelloHandler(WebSocketHandler):
 
     async def process_event(self, event_type: str, data: dict, sid: str):
         name = data.get("name") or "stranger"
-        PrintStyle.info(f"hello_request from {sid} ({name})")
-        return {"message": f"Hello, {name}!", "handler": self.identifier}
-
-
+        # Limit echoed name length to prevent data exfiltration
+        safe_name = str(name)[:64]
+        PrintStyle.info(f"hello_request from {sid} ({safe_name})")
+        return {"message": f"Hello, {safe_name}!", "handler": self.identifier}

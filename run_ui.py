@@ -20,6 +20,7 @@ from python.helpers import files, git, mcp_server, fasta2a_server, settings as s
 from python.helpers.files import get_abs_path
 from python.helpers import runtime, dotenv, process
 from python.helpers.websocket import WebSocketHandler, validate_ws_origin
+from python.helpers.ws_rate_limiter import get_ws_rate_limiter
 from python.helpers.extract_tools import load_classes_from_folder
 from python.helpers.api import ApiHandler
 from python.helpers.print_style import PrintStyle
@@ -324,6 +325,17 @@ def configure_websocket_namespaces(
             _csrf_required: bool = csrf_required,
         ):
             with webapp.request_context(environ):
+                # Rate limiting: check connection attempts per IP
+                client_ip = environ.get("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
+                if not client_ip:
+                    client_ip = environ.get("REMOTE_ADDR", "unknown")
+                rate_limiter = get_ws_rate_limiter()
+                if not rate_limiter.check_and_record(client_ip):
+                    PrintStyle.warning(
+                        f"[SECURITY] WebSocket rate-limited IP={client_ip} namespace={_namespace} sid={sid}"
+                    )
+                    return False
+
                 origin_ok, origin_reason = validate_ws_origin(environ)
                 if not origin_ok:
                     PrintStyle.warning(
